@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dark Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <button id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <a class="site-title" href="index.html">Dark Wiki</a>
+    <label class="search-label" for="searchInput" aria-label="Search">
+      <input id="searchInput" type="search" placeholder="Search pages…" autocomplete="off" />
+    </label>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Site navigation">
+      <nav>
+        <h2>Navigation</h2>
+        <ul id="navList">
+          <li><a href="index.html" data-title="Home">Home</a></li>
+          <li><a href="articles/history-of-ai.html" data-title="History of AI">History of AI</a></li>
+          <li><a href="articles/mars-exploration.html" data-title="Mars Exploration">Mars Exploration</a></li>
+          <li><a href="about.html" data-title="About">About</a></li>
+        </ul>
+      </nav>
+      <section class="sidebar-box">
+        <h3>Quick Links</h3>
+        <ul class="plain">
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <main id="content" class="content" tabindex="-1">
+      <article class="article">
+        <header class="article-header">
+          <h1>Welcome to Dark Wiki</h1>
+          <p class="subtitle">A minimal, Wikipedia-inspired theme with a dark UI.</p>
+        </header>
+        <section>
+          <p>
+            This is a lightweight static site designed to feel familiar to Wikipedia readers,
+            adapted for a dark theme and readability. Use the left sidebar to navigate.
+          </p>
+          <div class="infobox">
+            <h4>Featured article</h4>
+            <p><a href="articles/history-of-ai.html">History of AI</a> — From symbolic systems to deep learning.</p>
+          </div>
+          <h2>Getting started</h2>
+          <ol>
+            <li>Enable GitHub Pages in repository settings (Deploy from branch: main / docs).</li>
+            <li>Customize <code>assets/css/styles.css</code> for colors, spacing, and typography.</li>
+            <li>Add more pages under <code>articles/</code> and link them in the sidebar.</li>
+          </ol>
+        </section>
+      </article>
+      <footer class="site-footer">
+        <p>Dark Wiki • Built for GitHub Pages • <a href="about.html">About</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mars Exploration • Dark Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <button id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <a class="site-title" href="../index.html">Dark Wiki</a>
+    <label class="search-label" for="searchInput" aria-label="Search">
+      <input id="searchInput" type="search" placeholder="Search pages…" autocomplete="off" />
+    </label>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Site navigation">
+      <nav>
+        <h2>Navigation</h2>
+        <ul id="navList">
+          <li><a href="../index.html" data-title="Home">Home</a></li>
+          <li><a href="history-of-ai.html" data-title="History of AI">History of AI</a></li>
+          <li><a class="active" href="mars-exploration.html" data-title="Mars Exploration">Mars Exploration</a></li>
+          <li><a href="../about.html" data-title="About">About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="content" class="content" tabindex="-1">
+      <article class="article">
+        <header class="article-header">
+          <h1>Mars Exploration</h1>
+          <p class="subtitle">Robotic missions and the search for life.</p>
+        </header>
+        <section>
+          <p>
+            Mars exploration has included orbiters, landers, and rovers from multiple space agencies.
+            Notable missions include Viking, Pathfinder, Spirit/Opportunity, Curiosity, Perseverance, and Ingenuity.
+          </p>
+          <h2>Science goals</h2>
+          <ul>
+            <li>Understand Mars’ climate and geology</li>
+            <li>Assess past habitability and search for biosignatures</li>
+            <li>Prepare for human exploration</li>
+          </ul>
+          <p class="smallprint">Sample text for layout and list rendering.</p>
+        </section>
+      </article>
+      <footer class="site-footer">
+        <p>Dark Wiki • <a href="../index.html">Home</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
